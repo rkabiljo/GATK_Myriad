@@ -3,8 +3,19 @@
 The actual script is runGATK.sh
 
 ### Preparation instructions
-I created a separate conda environment where I put GATK and samtools and a few other dependencies
+I created a separate conda environment where I put GATK, samtools and a bwa
+```
+conda create -n gatk_env
+conda activate gatk_env
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+conda install gatk4
+conda install -c bioconda samtools bwa
 
+#to check what is installed in the activated env
+conda env export --from-history
+```
 
 ### DOwnload all GATK dependencies from google cloud Broad Institute
 ```
