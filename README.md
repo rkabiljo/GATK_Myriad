@@ -12,6 +12,7 @@ conda config --add channels bioconda
 conda config --add channels conda-forge
 conda install gatk4
 conda install -c bioconda samtools bwa
+conda install -c r r-base r-ggplot2
 
 #to check what is installed in the activated env
 conda env export --from-history
