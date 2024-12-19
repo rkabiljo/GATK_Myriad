@@ -20,6 +20,7 @@ conda install -c r r-base r-ggplot2
 conda env export --from-history
 ```
 
+
 ### DOwnload all GATK dependencies from google cloud Broad Institute
 ```
 conda create -n gcloud_env python=3.8 -y
