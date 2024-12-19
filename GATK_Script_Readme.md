@@ -38,7 +38,7 @@ See the downloading instructions in [README.md](README.md)
    ```
 3. Ensure the script runs in the working directory:
    ```bash
-   cd /home/skgtrk2/Scratch/ICGNMD_TEMP
+   cd /home/skgtrk2/Scratch/<WORK_DIR>
    ```
 
 ## Workflow
@@ -171,6 +171,4 @@ gatk ApplyVQSR \
    -mode INDEL \
    --tmp-dir "$OUTPUT_DIR/tmp"
 ```
-
-
 
