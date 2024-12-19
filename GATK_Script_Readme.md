@@ -1,4 +1,4 @@
-# GATK Workflow Script for Variant Calling and Quality Score Recalibration
+# GATK Workflow Script for Alignment, Variant Calling and Quality Score Recalibration
 
 ## Overview
 This script performs variant calling on paired-end whole-genome sequencing data using the GATK (Genome Analysis Toolkit). It aligns FASTQ files to a reference genome, processes the resulting BAM files, and applies variant quality score recalibration (VQSR) to produce high-quality variant calls in VCF format.
