@@ -9,13 +9,13 @@ module purge
 module load gcc-libs
 
 conda activate gatk_env
-cd /home/skgtrk2/Scratch/ICGNMD_TEMP
+cd /home/skgtrk2/Scratch/<MY_DIR>
 
 # Define paths to FASTQ files
-FASTQ1="/home/skgtrk2/Scratch/ICGNMD_TEMP/IC_KUC_00124_WGS_macrogen_R1.fastq.gz"
-FASTQ2="/home/skgtrk2/Scratch/ICGNMD_TEMP/IC_KUC_00124_WGS_macrogen_R2.fastq.gz"
+FASTQ1=".../<MY_FASTQ>_R1.fastq.gz"
+FASTQ2=".../<MY_FASTQ>_R2.fastq.gz"
 OUTPUT_DIR="gatk_output"
-SAMPLE="IC_KUC_00124"
+SAMPLE="SUBJECT_ID"
 
 # Define paths to resources in your bundle directory
 RESOURCES_DIR="/home/skgtrk2/Scratch/GATK_resource/v0"
