@@ -28,7 +28,7 @@ OMNI="$RESOURCES_DIR/1000G_omni2.5.hg38.vcf.gz"
 PHASE1_1000G="$RESOURCES_DIR/1000G_phase1.snps.high_confidence.hg38.vcf.gz"
 WGS_INTERVALS="$RESOURCES_DIR/wgs_calling_regions.hg38.interval_list"
 
-:<<'COMMENT'
+
 # Create output directory if it doesn't exist
 mkdir -p "$OUTPUT_DIR"
 ### STEP 1: Align FASTQ files to reference genome with BWA-MEM and convert to BAM ###
@@ -41,7 +41,7 @@ samtools sort -@ 16 -o "$OUTPUT_DIR/$SAMPLE.sorted.bam" "$OUTPUT_DIR/$SAMPLE.bam
 rm "$OUTPUT_DIR/$SAMPLE.bam"
 echo "done samtools sorting, starting marking duplicates"
 ### STEP 2: Mark duplicates ###
-COMMENT
+
 gatk MarkDuplicates \
    -I "$OUTPUT_DIR/$SAMPLE.sorted.bam" \
    -O "$OUTPUT_DIR/$SAMPLE.marked_duplicates.bam" \
