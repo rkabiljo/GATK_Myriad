@@ -5,12 +5,14 @@ This script performs variant calling on paired-end whole-genome sequencing data 
 
 ## Prerequisites
 
-I am using conda environment, see how co create the identical one here:
+I am using conda environment, see how to create the identical one here:
 [README.md](README.md)
 
 
 
 ### Resources
+
+See the downloading instructions in [README.md](README.md)
 - Reference genome: `Homo_sapiens_assembly38.fasta`
 - Known variants for base recalibration and VQSR:
   - dbSNP: `Homo_sapiens_assembly38.dbsnp138.vcf`
@@ -21,6 +23,8 @@ I am using conda environment, see how co create the identical one here:
   - 1000G Phase 1 high-confidence SNPs: `1000G_phase1.snps.high_confidence.hg38.vcf.gz`
 - Target intervals: `wgs_calling_regions.hg38.interval_list`
 
+
+## Script documentation
 ### Environment Setup
 
 1. Load necessary modules:
