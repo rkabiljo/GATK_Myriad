@@ -5,11 +5,10 @@ This script performs variant calling on paired-end whole-genome sequencing data 
 
 ## Prerequisites
 
-### Tools and Software
-- [BWA-MEM](http://bio-bwa.sourceforge.net/)
-- [Samtools](http://www.htslib.org/)
-- [GATK](https://gatk.broadinstitute.org/)
-- [Conda](https://conda.io/)
+I am using conda environment, see how co create the identical one here:
+[README.md](README.md)
+
+
 
 ### Resources
 - Reference genome: `Homo_sapiens_assembly38.fasta`
