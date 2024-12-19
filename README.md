@@ -76,5 +76,9 @@ total 33G
 -rw-r--r--  1 skgtrk2 skgts1 1.5M Nov  4 17:48 Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi
 -rw-r--r--  1 skgtrk2 skgts1 586K Nov  4 17:48 wgs_calling_regions.hg38.interval_list
 drwxr-xr-x 52 skgtrk2 skgts1 4.0K Nov  4 17:28 scattered_calling_intervals
+```
 
+After the resources are downloaded, you can run the script [runGATK.sh](runGATK.sh)
+```
+qsub runGATK.sh
 ```
