@@ -2,7 +2,7 @@
 
 The actual script is runGATK.sh
 
-The script and all its steps are documented in detail [here](GATK_Script_Readme.md)
+The script and all its steps are documented in detail [GATK_Script_Readme.md](GATK_Script_Readme.md)
 
 ### Preparation instructions
 I created a separate conda environment where I put GATK, samtools and a bwa
