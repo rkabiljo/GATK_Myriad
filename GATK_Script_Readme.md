@@ -169,17 +169,5 @@ gatk ApplyVQSR \
    --tmp-dir "$OUTPUT_DIR/tmp"
 ```
 
-## Logical Review
-1. **BWA alignment and sorting:** No issues noted. Proper use of read groups.
-2. **MarkDuplicates:** TMP directory is defined, which avoids disk space issues.
-3. **BQSR:** Known sites are correctly included for recalibration.
-4. **HaplotypeCaller:** Runs in GVCF mode, allowing for joint genotyping if needed.
-5. **VQSR:** Resources and annotations are appropriate for SNP and INDEL recalibration.
-
-### Potential Improvements
-- TMP directory creation: Ensure `tmp` subdirectory exists before using it.
-- Memory and thread usage: Verify HPC allocation aligns with the requested resources.
-
-Feel free to suggest additional modifications or clarifications.
 
 
